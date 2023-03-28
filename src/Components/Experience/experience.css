@@ -1,0 +1,69 @@
+.experience__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.experience__container > div{
+    background: #4d4d89;
+    padding: 2.4rem 5rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.experience__container > div:hover{
+    background: transparent;
+    border-color: var(--color-promary-varient);
+    cursor: default;
+}
+.experience__container > div h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #4db5ff;
+}
+
+.experence__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.experence__details{
+    display: flex;
+    gap: 1rem;
+}
+.experence__details-icon{
+    margin-top: 6px;
+    color: var(--color-primary);
+}
+
+/* ======================== MEDIA QUERIES(MEDUM DIVICES)======================= */
+
+@media screen and (max-width:1024px) {
+    .experience__container{
+        grid-template-columns: 1fr;
+    }
+    .experience__container > div{
+        width: 80%;
+        padding: 2rem;
+        /* margin: 10rem; */
+        margin: 2rem auto;
+    }
+    .experence__content{
+        padding: 1rem;
+        margin: 2rem;
+    }
+}
+
+/* ======================== MEDIA QUERIES(SMALL DIVICES)======================= */
+
+@media screen and (max-width:600px) {
+    .experience__container{
+        gap: 1rem;
+
+    }
+    .experience__container>div{
+        width: 100%;
+        padding: 1rem;
+    }
+}
