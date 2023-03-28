@@ -5,7 +5,7 @@ import { BsMessenger } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
 const contect = () => {
   return (
-    <section id="contect">
+    <section id="contact">
       <h5>Get In Touch</h5>
       <h2>Contect Me</h2>
       <div className="container contact__container">
